@@ -1317,7 +1317,7 @@ table.focus-on {
   width: 100%;
 
   .select2-choices {
-    border: 1px solid #border  !important;
+    border: 1px solid @border  !important;
     box-shadow: none !important;
     background-image: none  !important;
     border-radius:@radius!important;
@@ -1459,12 +1459,28 @@ table.focus-on {
 
 /* Login- register pages */
 .login-register{
-  background:url(../../plugins/images/login-register.jpg) no-repeat center center / cover !important;
+  background: url('https://inteng-storage.s3.amazonaws.com/img/iea/M3OeLXdywN/sizes/7cannabis_resize_md.jpg') center;
+  background-size:cover ;
   height:100%;
   position:fixed;
 }
 .login-box{
-  background:@white;
+  background: transparent;
+  color:white;
+  .white-box{
+  h1{
+    color: white;
+    font-weight: bold;
+    font-size: 5em;
+
+  }
+    b{
+      color:white;
+    }
+    h6{
+      color:white;
+    }
+  }
   width:400px;
   margin:0 auto;
   margin-top:10%;
@@ -2538,7 +2554,7 @@ ul.list-icons{
 }
 /*Datatable*/
 .editable-table + input.error{
-    border:1px solid #danger;
+    border:1px solid @danger;
     outline:0;
     outline-offset:0
     }
